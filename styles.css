@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .welcome {
@@ -23,11 +24,27 @@ body {
 }
 
 .sidebar {
-    background-color: pink;
-    grid-area: 1 / 1 / 4 / 2;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: repeat(10, 1fr);
+    background-color: #0284c7;
+    color: white;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 9px;
+    gap: 20px;
+    align-content: center;
+
+
+
+
+    /* justify-content: center;
+    grid-template-rows: 2fr, repeat(9, 1fr);
+    grid-auto-rows: 1fr; */
+}
+
+#dashboard {
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 .sidebar > div {
@@ -85,8 +102,110 @@ body {
 }
 
 .main-content {
-    background-color: lightcyan;
+    box-shadow: 0px -5px 5px #e2e8f1;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
 
+.main-content-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-card {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    box-shadow: -5px 0px orange;
+    border-color: white;
+    background-color: white;
+    height: minmax(175px, auto);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content:space-between;
+}
+
+.project-card div span {
+    font-size: 12px;
+}
+
+.announcements {
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -5px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements > div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.trending {
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    width: minmax(250px, auto);
+}
+
+.trending > div {
+    display: flex;
+    gap: 20px;
+}
+
+h5,
+.text-wrapper > h4
+ {
+    margin-bottom: 0;
+}
+
+.trending-text {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+hr {
+    width: 90%;
+    color: gray;
+    margin-bottom: 0px;
+}
+
+.announcements-text {
+    font-size: 10px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
 }
 
 a:link {

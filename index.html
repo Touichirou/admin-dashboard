@@ -11,9 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <div class="container">
         <div class="sidebar">
-            <h1>Dashboard</h1>
+
+            <div id="dashboard">
+            <img class="svg" src="images/view-dashboard-outline.svg" alt="A logo containing four rectangles. This symbolises your dashboard.">
+            <h2>Dashboard</h2>
+            </div>
 
             <div>
                 <img class="svg" src="images/home-city-outline.svg" alt="An outline of a house. Click this to access your homepage">
@@ -86,19 +91,173 @@
         </div>
         
         <div class="main-content">
-            <h3>Sales Figures</h3>
-            <h6>Overview</h6>
-            <div>Daily Orders</div>
-            <div>Daily Sales</div>
-            <div>Daily Average Order Value</div>
-            <div>Weekly Orders</div>
-            <div>Weekly Sales</div>
-            <div>Weekly Average Order Value</div>
+            <div class="main-content-left">
+            <h3 class="your-projects-title"><strong>Your Projects</strong></h3>
+            <div></div>
+            
 
+            <div class="project-card" id="super-cool-project">
+                <div class="text-wrapper">
+                <h4>Super Cool Project</h4>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel tortor augue. 
+                        Nulla nec vestibulum ante. Nulla turpis lacus, faucibus ut lorem mollis, condimentum 
+                        aliquam felis.
+                    </span>
+                    </div>
+                    <div class="icon-wrapper">
+                    <img class="svg" src="images/star-plus-outline.svg" alt="An outline of a star. Click to favourite this post.">
+                    <img class="svg" src="images/eye-plus-outline.svg" alt="An outline of an eye. Click to view the full post.">
+                    <img class="svg" src="images/share-variant-outline.svg" alt="An outline of a stethoscope. Click to share this post.">
+                    </div>
+            </div>
 
-            <h3>Visitor Demographics</h3>
-    
-            <h3>Web Traffic Statistics</h3>
+            <div class="project-card" id="less-cool-project">
+                <div class="text-wrapper">
+                <h4>Less Cool Project</h4>
+                    <span>
+                        Donec elementum lorem eros, sed fringilla orci dapibus quis. Quisque aliquam ipsum et nibh 
+                        maximus, ut lacinia lacus malesuada. Nullam tellus nisl, bibendum sagittis blandit sed, consectetur 
+                        sed lectus.
+                    </span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <img class="svg" src="images/star-plus-outline.svg" alt="An outline of a star. Click to favourite this post.">
+                        <img class="svg" src="images/eye-plus-outline.svg" alt="An outline of an eye. Click to view the full post.">
+                        <img class="svg" src="images/share-variant-outline.svg" alt="An outline of a stethoscope. Click to share this post.">
+                        </div>    
+            </div>
+
+            
+
+            <div class="project-card" id="impossible-app">
+                <div class="text-wrapper">
+                <h4>Impossible App</h4>
+                    <span>
+                        Morbi justo elit, mollis vel dapibus ut, gravida in magna. Donec imperdiet vehicula sollicitudin. 
+                        Vestibulum at nunc a magna lacinia placerat non vitae justo. Aenean pretium dolor a magna porttitor, 
+                        ac feugiat arcu varius.
+                    </span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <img class="svg" src="images/star-plus-outline.svg" alt="An outline of a star. Click to favourite this post.">
+                        <img class="svg" src="images/eye-plus-outline.svg" alt="An outline of an eye. Click to view the full post.">
+                        <img class="svg" src="images/share-variant-outline.svg" alt="An outline of a stethoscope. Click to share this post.">
+                        </div>
+            </div>
+
+            <div class="project-card" id="easy-peasy-app">
+                <div class="text-wrapper">
+                <h4>Easy Peasy App</h4>
+                    <span>
+                        Aliquam mattis lobortis mollis. Quisque viverra libero vitae hendrerit mollis. Duis pretium gravida 
+                        tellus, eu convallis mi iaculis in. Phasellus congue luctus lacus, ut porta tellus suscipit in. Ut 
+                        posuere maximus nunc non sollicitudin.
+                    </span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <img class="svg" src="images/star-plus-outline.svg" alt="An outline of a star. Click to favourite this post.">
+                        <img class="svg" src="images/eye-plus-outline.svg" alt="An outline of an eye. Click to view the full post.">
+                        <img class="svg" src="images/share-variant-outline.svg" alt="An outline of a stethoscope. Click to share this post.">
+                        </div>
+            </div>
+
+            <div class="project-card" id="ad-blocker">
+                <div class="text-wrapper">
+                <h4>Ad Blocker</h4>
+                    <span>
+                        Sed pretium in nulla at gravida. Praesent finibus quam eu velit cursus, mollis luctus tortor maximus. 
+                        Nam hendrerit augue vitae eros mollis, ut tristique neque condimentum.
+                    </span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <img class="svg" src="images/star-plus-outline.svg" alt="An outline of a star. Click to favourite this post.">
+                        <img class="svg" src="images/eye-plus-outline.svg" alt="An outline of an eye. Click to view the full post.">
+                        <img class="svg" src="images/share-variant-outline.svg" alt="An outline of a stethoscope. Click to share this post.">
+                        </div>
+            </div>
+
+            <div class="project-card" id="money-maker">
+                <div class="text-wrapper">
+                <h4>Money Maker</h4>
+                    <span>
+                        Nulla sollicitudin risus diam, laoreet aliquet purus ultricies feugiat. Integer at odio vel arcu 
+                        condimentum pellentesque at sit amet tortor. Pellentesque habitant morbi tristique senectus et 
+                        netus et malesuada fames ac turpis egestas.
+                    </span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <img class="svg" src="images/star-plus-outline.svg" alt="An outline of a star. Click to favourite this post.">
+                        <img class="svg" src="images/eye-plus-outline.svg" alt="An outline of an eye. Click to view the full post.">
+                        <img class="svg" src="images/share-variant-outline.svg" alt="An outline of a stethoscope. Click to share this post.">
+                        </div>
+            </div>
+        </div>
+
+        <div class="main-content-right">
+            <h3 class="announcements-title"><strong>Announcements</strong></h3>
+            <div class="announcements">
+                
+                <div class="site-maintenance">
+                <h5>Site Maintenance</h5>
+                    <span class="announcements-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque volutpat ante tortor, vitae suscipit tellus tristique vitae.</span>
+                       
+                </div>  
+                <hr> 
+
+                <div class="community-share-day">
+                <h5>Community Share Day</h5>
+                    <span class="announcements-text">Quisque malesuada, ipsum non molestie pellentesque, neque orci 
+                        vehicula metus, et rhoncus ante diam sed ante.</span>
+                        
+                </div>
+<hr>
+                <div class="updated-privacy-policy">
+                <h5>Updated Privacy Policy</h5>
+                    <span class="announcements-text">Ut sed rhoncus tellus, feugiat vulputate augue. Aenean rhoncus 
+                        commodo mi nec vestibulum.</span>
+                </div>
+            </div>
+
+            <h3 class="trending-title"><strong>Trending</strong></h3>
+            <div class="trending">
+
+                <div class="trending-one">
+                    <img class="profile-picture" src="images/horatio.jpg" alt="Your profile picture." width="40" height="40">
+                    <span class="trending-text">
+                    <div>@Khloe</div> 
+                    <div>Khlomoney!</div>
+                    </span>
+                </div>
+
+                <div class="trending-two">
+                    <img class="profile-picture" src="images/horatio.jpg" alt="Your profile picture." width="40" height="40">
+                    <span class="trending-text">
+                        <div>@Kylie</div>
+                        <div>Is that a chicken?!</div>
+                    </span>
+                </div>
+
+                <div class="trending-three">
+                    <img class="profile-picture" src="images/horatio.jpg" alt="Your profile picture." width="40" height="40">
+                    <span class="trending-text">
+                    <div>@Kim</div> 
+                    <div>Get off your arse and work!</div>
+                    </span>
+                </div>
+
+                <div class="trending-four">
+                    <img class="profile-picture" src="images/horatio.jpg" alt="Your profile picture." width="40" height="40">
+                    <span class="trending-text">
+                        <div>@Kourtney</div>
+                        <div>Who chooses black?</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+            
 
             
         </div>
